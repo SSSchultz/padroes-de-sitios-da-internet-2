@@ -16,6 +16,10 @@ h1 {
     font-size: 2em;
 }
 
+img {
+    max-width: 100%;
+}
+
 .brief {
     margin: 0.31em 0;
 }
