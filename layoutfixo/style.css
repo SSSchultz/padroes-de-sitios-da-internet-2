@@ -16,7 +16,12 @@ h1 {
     font-size: 2em;
 }
 
-img {
+img,
+iframe,
+object,
+embed,
+video {
+    height: auto;
     max-width: 100%;
 }
 
@@ -94,4 +99,47 @@ img {
     padding: 1.5625%;
     text-align: center;
     width: 100%;
+}
+
+@media all and (max-width: 320px) {
+
+    .content-main {
+        float: left;
+        width: 100%;
+    }
+    
+
+    .main-nav li {
+        float: none;
+        width: auto;
+        flex: end;
+    }
+
+    .content-sidebar {
+        background-color: #F0F0F0;
+        float: right;
+        padding: 1.0416%;
+        width: 100%;
+    }
+
+    .last-content {
+        float: left;
+        margin: 2.5295% 2.5295% 2.5295% 0;
+        width: 150%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .content-main {
+        float: none;
+    }
+
+    .last-content-call {
+        float: none;
+        width: auto;
+    }
+
+    .content-sidebar {
+        float: none;
+    }
 }
